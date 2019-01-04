@@ -87,7 +87,7 @@ func NewWeChatNotifier(model *m.AlertNotification) (alerting.Notifier, error) {
 
 	touser := model.Settings.Get("touser").MustString()
 	if touser == "" {
-		return nil, alerting.ValidationError{Reason: "Could not find touser property in settings"}
+		touser = "@all"
 	}
 
 	return &WeChatNotifier{
