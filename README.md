@@ -1,6 +1,6 @@
 ### docker-grafana with wechat notifier
 
-#### Build
+#### Build image
 
 ```
 $ chmod +x run.sh
@@ -9,11 +9,13 @@ $ ./run.sh
 
 waiting completion...
 
-#### Open
+#### Up container
 
-open localhost:3000
+```
+$ docker-compose up -d
+```
 
-default user/pass is admin/admin
+container starts on port 3000，default user/pass is admin/admin"
 
 #### Add notifier
 

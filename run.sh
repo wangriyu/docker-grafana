@@ -17,7 +17,3 @@ cd grafana
 make build-docker-full
 
 echo "build docker image: `grafana/grafana:dev` success"
-
-docker run -d --name=grafana -p 3000:3000 grafana/grafana:dev
-
-echo "container starts on port 3000，default user/pass is admin/admin"
