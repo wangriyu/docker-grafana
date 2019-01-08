@@ -19,7 +19,7 @@ default user/pass is admin/admin
 
 how to add wechat notifier: https://zhuanlan.zhihu.com/p/38225794
 
-> ToUser: @all
+> ToUser: default value is `@all`, you can specify it as `UserID1|UserID2|UserID3`
 
 #### Add alerting rules
 
