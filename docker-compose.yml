@@ -8,6 +8,12 @@ services:
       - 3000:3000
     restart: always
     network_mode: "host"
+    environment:
+      - TZ: "Asia/Shanghai"
+      - GF_SECURITY_ADMIN_PASSWORD: admin123456
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
+      - /data/lib/grafana:/var/lib/grafana
+      - /data/logs/grafana:/var/log/grafana
+      - ./conf/grafana.ini:/etc/grafana/grafana.ini
