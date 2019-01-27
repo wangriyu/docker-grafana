@@ -15,7 +15,7 @@ waiting completion...
 $ docker-compose up -d
 ```
 
-container starts on port 3000，default user/pass is admin/admin"
+container starts on port 3000，default user/pass is admin/admin123456"
 
 #### Add notifier
 
@@ -30,3 +30,8 @@ http://docs.grafana.org/alerting/rules/
 #### Others
 
 more info about docker-image: http://docs.grafana.org/installation/docker/
+
+> You may have issues with file permissions, more information here: http://docs.grafana.org/installation/docker/#migration-from-a-previous-version-of-the-docker-container-to-5-1-or-later
+  mkdir: cannot create directory '/var/lib/grafana/plugins': Permission denied
+> >
+> > $ sudo chown 472 /data/lib/grafana

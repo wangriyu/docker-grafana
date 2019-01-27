@@ -9,8 +9,7 @@ services:
     restart: always
     network_mode: "host"
     environment:
-      - TZ: "Asia/Shanghai"
-      - GF_SECURITY_ADMIN_PASSWORD: admin123456
+      - "GF_SECURITY_ADMIN_PASSWORD=admin123456"
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
